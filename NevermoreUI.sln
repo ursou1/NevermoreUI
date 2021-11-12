@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NevermoreUI", "NevermoreUI\NevermoreUI.csproj", "{3DA1A69C-0C11-4F1A-ADB5-A5C30EA01D54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DA1A69C-0C11-4F1A-ADB5-A5C30EA01D54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DA1A69C-0C11-4F1A-ADB5-A5C30EA01D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DA1A69C-0C11-4F1A-ADB5-A5C30EA01D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DA1A69C-0C11-4F1A-ADB5-A5C30EA01D54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE4D9141-73A9-43D1-859A-88304C90B2C4}
+	EndGlobalSection
+EndGlobal

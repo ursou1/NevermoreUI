@@ -1,0 +1,42 @@
+﻿<Window x:Class="NevermoreUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NevermoreUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <ListView>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Time" DisplayMemberBinding="{Binding Time}" />
+                    <GridViewColumn Header="Price" DisplayMemberBinding="{Binding Price}"/>
+                    <GridViewColumn Header="Food" DisplayMemberBinding="{Binding Food}"/>
+                    <GridViewColumn Header="Waiter" DisplayMemberBinding="{Binding Waiter}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <StackPanel Grid.Row="1">
+        <Button Content="get" Command="{Binding GetCommand}"/>
+        <Button Content="post" Command="{Binding PostCommand}"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBox Text="{Binding SelectedPrice}"/>
+            <TextBox Text="{Binding SelectedFood}"/>
+            <TextBox Text="{Binding SelectedWaiter}"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="2">
+            <Button Content="put" Command="{Binding PutCommand}"/>
+            <Button Content="delete" Command="{Binding DeleteCommand}"/>
+        </StackPanel>
+    </Grid>
+</Window>
